@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    list-style: none;
+    font-size: 14px;
+}
+.enlace-menu-principal{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.enlace-menu-principal:hover{
+    color: #0e6d49;
+}
+.enlace-menu-secundario{
+    font-weight: bold;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.enlace-menu-secundario:hover{
+    color: #6c6c6c;
+}
+.boton-inicia{
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+}
+.boton-inicia:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.boton-unete{
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+}
+.boton-unete:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.menu-footer{
+    list-style: none;
+}
+.submenu-footer{
+    list-style: none;
+}
+.redes-sociales{
+    list-style: none;
+}
+.menu-secundario-footer{
+    list-style: none;
+}
