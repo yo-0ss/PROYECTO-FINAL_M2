@@ -81,9 +81,38 @@ main{
 .boton-unete:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
+.menu-footer{
+    list-style: none;
+    padding: 64px;
+    line-height: 30px;
+}
+.titulo-footer{
+    font-size: 20px;
+    cursor: pointer;
+}
+.enlace-footer{
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.enlace-footer:hover{
+    color: var(--color-texto);
+}
+.submenu-footer{
+    list-style: none;
+}
+.redes-sociales{
+    list-style: none;
+}
+.enlace-redes{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+.menu-secundario-footer{
+    list-style: none;
+}
 
 .boton{
     border-style: solid;
