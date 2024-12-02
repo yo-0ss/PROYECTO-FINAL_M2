@@ -1,42 +1,79 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --color-primario: #008248;
+    --color-secundario: #D4E9E2;
+    --color-background: #FFF;
+    --color-texto: #1f1f1f;
+    --color-texto-secundario:#6C6C6C;
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-background);
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--color-texto);
+}
+h1{
+    font-weight: normal;
+    font-size: 25px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+nav{
+    
+    padding: 25px;
+}
+main{
+    padding: 50px;
+}
 .menu{
     list-style: none;
-    font-size: 14px;
+}
+.navegador-izquierda{
+    letter-spacing: 1px;
 }
 .enlace-menu-principal{
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1f1f1f;
+    color: var(--color-texto);
 }
 .enlace-menu-principal:hover{
-    color: #0e6d49;
+    color: var(--color-primario);
 }
 .enlace-menu-secundario{
     font-weight: bold;
     text-decoration: none;
-    color: #1f1f1f;
+    text-align: center;
+    color: var(--color-texto);
 }
 .enlace-menu-secundario:hover{
     color: #6c6c6c;
 }
 .boton-inicia{
+    border-style: solid;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
     height: 30px;
     width: 120px;
     border-radius: 50px;
+    border-width: 1px;
 }
 .boton-inicia:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
 .boton-unete{
+    border-style: solid;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 1);
-    color: #ffffff;
+    color: var(--color-background);
     height: 30px;
     width: 120px;
     border-radius: 50px;
@@ -44,15 +81,22 @@ body{
 .boton-unete:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
-.menu-footer{
-    list-style: none;
+
+
+
+
+.boton{
+    border-style: solid;
+    background: var(--color-background);
+    border-color: var(--color-primario);
+    border-radius: 50px;
+    text-align: center;
+    color: var(--color-primario);
+    padding: 10px;
 }
-.submenu-footer{
-    list-style: none;
+.boton:hover{
+    background: var(--color-secundario);
 }
-.redes-sociales{
-    list-style: none;
-}
-.menu-secundario-footer{
-    list-style: none;
+.boton-navidad{
+    font-weight: bold;
 }
