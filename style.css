@@ -83,7 +83,7 @@ main{
 }
 .menu-footer{
     list-style: none;
-    padding: 64px;
+    padding: 50px;
     line-height: 30px;
 }
 .titulo-footer{
@@ -104,14 +104,24 @@ main{
 }
 .redes-sociales{
     list-style: none;
+    padding: 50px;
 }
 .enlace-redes{
-    height: 60px;
-    width: 60px;
-    padding: 10px;
+    height: 40px;
+    width: 40px;
 }
 .menu-secundario-footer{
     list-style: none;
+    padding: 50px;
+    line-height: 30px;
+}
+.enlace-footer-secundario{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+.enlace-footer-secundario:hover{
+    color: var(--color-texto-secundario);
 }
 
 .boton{
