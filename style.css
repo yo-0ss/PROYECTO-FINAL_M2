@@ -12,8 +12,8 @@
 }
 body{
     background-color: var(--color-background);
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
     color: var(--color-texto);
 }
 h1{
@@ -26,16 +26,10 @@ h2{
 h3{
     font-size: 18px;
 }
-nav{
-    
-    padding: 25px;
-}
-main{
-    padding: 50px;
-}
 .navbar{
     max-width: 1560px;
     padding: 20px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,6 +92,12 @@ main{
 .boton-unete:hover{
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+.imagen-principal{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .menu-footer{
     list-style: none;
     padding: 50px;
