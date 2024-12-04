@@ -16,9 +16,7 @@ body{
         sans-serif;
     color: var(--color-texto);
 }
-h2{
-    font-size: 20px;
-}
+
 h3{
     font-size: 18px;
 }
@@ -115,6 +113,36 @@ h3{
 }
 .boton-navidad{
     font-weight: bold;
+}
+
+.articulo-principal{
+    margin: auto;
+    padding: auto;
+    width: 700px;
+    display: flex;
+    align-items: flex-start;
+}
+.imagen-articulo-principal{
+    width: 346px;
+}
+.informacion-articulo-principal{
+    padding-left: 50px;
+    max-height: 346px;
+}
+.informacion-articulo-principal h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.informacion-articulo-principal h1{
+    font-weight: normal;
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+.informacion-articulo-principal p{
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: var(--color-texto-secundario);
 }
 
 .boton{
