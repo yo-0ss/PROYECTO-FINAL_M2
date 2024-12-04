@@ -3,7 +3,7 @@
     --color-secundario: #D4E9E2;
     --color-background: #FFF;
     --color-texto: #1f1f1f;
-    --color-texto-secundario:#6C6C6C;
+    --color-texto-secundario: #6D6D6D;
 }
 *{
     box-sizing: border-box;
@@ -15,10 +15,6 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial,
         sans-serif;
     color: var(--color-texto);
-}
-h1{
-    font-weight: normal;
-    font-size: 25px;
 }
 h2{
     font-size: 20px;
@@ -98,6 +94,40 @@ h3{
     margin: auto;
 }
 
+.articulo-navidad{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.articulo-navidad h1{
+    font-weight: normal;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.articulo-navidad p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: var(--color-texto-secundario);
+}
+.articulo-navidad p strong{
+    color: var(--color-texto);
+}
+.boton-navidad{
+    font-weight: bold;
+}
+
+.boton{
+    background-color: rgba(0, 0, 0, 0);;
+    border: 1px solid var(--color-primario);
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    color: var(--color-primario);
+}
+.boton:hover{
+    background: var(--color-secundario);
+}
+
 .menu-footer{
     list-style: none;
     padding: 50px;
@@ -141,18 +171,5 @@ h3{
     color: var(--color-texto-secundario);
 }
 
-.boton{
-    border-style: solid;
-    background: var(--color-background);
-    border-color: var(--color-primario);
-    border-radius: 50px;
-    text-align: center;
-    color: var(--color-primario);
-    padding: 10px;
-}
-.boton:hover{
-    background: var(--color-secundario);
-}
-.boton-navidad{
-    font-weight: bold;
-}
+
+
