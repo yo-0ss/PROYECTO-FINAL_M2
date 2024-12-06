@@ -13,8 +13,8 @@
 }
 body{
     background-color: var(--color-background);
-    font-family: "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
     color: var(--color-texto);
 }
 
@@ -43,7 +43,6 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 1.5px;
     color: var(--color-texto);
 }
 .enlace-menu-principal a:hover{
@@ -71,6 +70,7 @@ body{
 }
 .boton-inicia, .boton-unete{
     border: 1px solid black;
+    font-size: 14px;
     border-radius: 40px;
     padding: 5px 20px 5px 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -107,12 +107,13 @@ body{
 }
 .articulo-navidad h1{
     font-weight: normal;
-    font-size: 25px;
+    font-size: 27px;
     padding-bottom: 20px;
 }
 .articulo-navidad p{
     padding-bottom: 20px;
     font-size: 14px;
+    line-height: 1.5;
     color: var(--color-texto-secundario);
 }
 .articulo-navidad p strong{
@@ -123,9 +124,7 @@ body{
 }
 
 .articulo-principal{
-    margin: auto;
-    padding: auto;
-    width: 700px;
+    padding: 32px 64.5px;
     display: flex;
     align-items: flex-start;
 }
@@ -153,41 +152,42 @@ body{
 }
 
 .contenedor-articulos{
-    margin: auto;
-    padding: 15px;
+    padding: 40px 64.5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 730px;
-    gap: 15px;
+    justify-content: space-between;
 }
 .articulo{
-    width: 340px;
-    background-color: var(--color-background-secundario);
+    width: 346px;
+    height: 385px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px 1px hsla(0, 0%, 42.4%, .11), 0 1px 1px 0 #ccc;
 }
 .articulo img{
-    width: 340px;
+    width: 346px;
+    margin-bottom: 24px;
 }
+
 .informacion-articulos {
-    box-shadow: 0px 0px 24px 1px rgba(108,108,108,0.2);
-    height: 140px;
-    padding: 20px;
     align-content: center;
+    padding: 0 24px 24px 24px;
 }
 .informacion-articulos h3{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
 }
 .informacion-articulos p{
     font-size: 14px;
     color: var(--color-texto-secundario);
-    padding-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .boton{
     background-color: rgba(0, 0, 0, 0);;
     border: 1px solid var(--color-primario);
-    padding: 5px 20px 5px 20px;
+    padding: 7px 13px;
+    font-size: 14px;
     border-radius: 40px;
     color: var(--color-primario);
 }
