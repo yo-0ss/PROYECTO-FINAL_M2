@@ -86,16 +86,24 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.contenedor-principal{
+    display: flex;
+}
+.imagen-publicidad{
+    max-width: 513px;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
 .imagen-principal{
-    max-width: 1440px;
+    max-width: 829px;
     margin: auto;
 }
 
 .articulo-navidad{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 40px 64.5px;
 }
 .articulo-navidad h1{
     font-weight: normal;
