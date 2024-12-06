@@ -4,7 +4,7 @@
     --color-background: #F7F7F7;
     --color-background-secundario: #FFFFFF;
     --color-texto: #1f1f1f;
-    --color-texto-secundario: #6D6D6D;
+    --color-texto-secundario: #777777;
 }
 *{
     box-sizing: border-box;
@@ -195,20 +195,34 @@ body{
     background: var(--color-secundario);
 }
 
+footer{
+    background-color: var(--color-background-secundario);
+    padding: 32px 64.5px 132px 64.5px;
+}
 .menu-footer{
     list-style: none;
-    padding: 50px;
-    line-height: 30px;
+}
+.contenedor-footer{
+    padding-bottom: 48px;
 }
 .titulo-footer{
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    line-height: 4;
+    align-items: center;
+}
+.titulo-footer-texto{
+    font-size: 23px;
     cursor: pointer;
+    
 }
 .enlace-footer{
     color: var(--color-texto-secundario);
     text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 4;
 }
 .enlace-footer:hover{
     color: var(--color-texto);
@@ -216,9 +230,15 @@ body{
 .submenu-footer{
     list-style: none;
 }
+.divisor{
+    margin: 40px 0;
+    border: 1px solid #ccc;
+}
 .redes-sociales{
     list-style: none;
-    padding: 50px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 .enlace-redes{
     height: 40px;
@@ -226,8 +246,8 @@ body{
 }
 .menu-secundario-footer{
     list-style: none;
-    padding: 50px;
-    line-height: 30px;
+    line-height: 3;
+    font-size: 14px;
 }
 .enlace-footer-secundario{
     text-decoration: none;
@@ -237,6 +257,3 @@ body{
 .enlace-footer-secundario:hover{
     color: var(--color-texto-secundario);
 }
-
-
-
