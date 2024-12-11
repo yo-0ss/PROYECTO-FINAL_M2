@@ -250,6 +250,13 @@ footer{
     color: var(--color-texto-secundario);
 }
 
+.boton, .boton-inicia, .boton-unete, .enlace-redes{
+    transition: transform 0.2s;
+}
+.boton:active, .boton-inicia:active, .boton-unete:active, .enlace-redes:active{
+    transform: scale(0.9);
+}
+
 @media screen and (min-width: 1024px){
     .navbar{
         justify-content: space-between;
