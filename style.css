@@ -37,6 +37,7 @@ body{
 .logo{
     scale: 0.8;
     padding-right: 40px;
+    cursor: pointer;
 }
 .enlace-menu-principal a{
     font-weight: bold;
@@ -77,6 +78,20 @@ body{
 }
 .boton-unete:hover{
     background-color: rgba(0, 0, 0, 0.7);
+}
+.icono-menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 22px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.icono-menu:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 
