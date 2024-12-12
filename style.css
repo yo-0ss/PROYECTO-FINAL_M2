@@ -20,11 +20,11 @@ body{
 
 .navbar{
     max-width: 1560px;
-    padding: 20px;
+    padding: 0px 20px;
+    height: 72px;
     font-size: 14px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     background-color: var(--color-background-secundario);
@@ -32,14 +32,11 @@ body{
 .nav-izquierda, .nav-derecha{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px;  
 }
-.enlace-menu-principal{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
+.logo{
+    scale: 0.8;
+    padding-right: 40px;
 }
 .enlace-menu-principal a{
     font-weight: bold;
@@ -49,12 +46,6 @@ body{
 }
 .enlace-menu-principal a:hover{
     color: var(--color-primario);
-}
-.enlace-menu-secundario{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
 }
 .enlace-menu-secundario a{
     font-weight: bold;
@@ -101,7 +92,8 @@ body{
 }
 
 .articulo-navidad{
-    padding: 40px 64.5px;
+    padding: 20px;
+    padding-right: 100px;
 }
 .articulo-navidad h1{
     font-weight: normal;
@@ -256,9 +248,33 @@ footer{
 .boton:active, .boton-inicia:active, .boton-unete:active, .enlace-redes:active{
     transform: scale(0.9);
 }
-
+.enlace-menu-principal, .enlace-menu-secundario{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
+    .enlace-menu-principal, .enlace-menu-secundario{
+        display: block;
+    }
+    .icono-menu{
+        display: none;
+    } 
+    .enlace-menu-secundario{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+    }
+    .enlace-menu-principal{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style: none;
+    }
+    .enlace-menu-principal li:nth-child(3){
+        display: none;
+    }
     .articulo-principal{
         padding: 32px 64.5px;
         display: flex;
@@ -285,12 +301,17 @@ footer{
         margin-bottom: 24px;
         box-shadow: 0 2px 8px 1px hsla(0, 0%, 42.4%, .11), 0 1px 1px 0 #ccc;
     }
-    
 }
 
 @media screen and (min-width: 1024px){
     .navbar{
-        justify-content: space-between;
+        height: 100px;
+    }
+    .logo{
+        scale: 1;
+    }
+    .enlace-menu-principal li:nth-child(3){
+        display: contents;
     }
     .contenedor-principal{
         display: flex;
@@ -312,6 +333,10 @@ footer{
         max-width: 830px;
         width: 100%;
         margin: auto;
+    }
+    .articulo-navidad{
+        padding: 40px 64.5px;
+        padding-right: 70px;
     }
     .contenedor-articulos{
         margin: auto;
