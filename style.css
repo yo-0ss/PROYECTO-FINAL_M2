@@ -79,13 +79,28 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.contenedor-publicidad{
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+.degradado{
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(145,145,145,0) 75%);
+}
 .imagen-publicidad{
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin: auto;
 }
 
+.contenedor-imagen-principal{
+    width: auto;
+    height: auto;
+}
 .imagen-principal{
     width: 100%;
     margin: auto;
