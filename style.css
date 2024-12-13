@@ -6,6 +6,7 @@
     --color-texto: #1f1f1f;
     --color-texto-secundario: #777777;
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +14,7 @@
 }
 body{
     background-color: var(--color-background);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "SoDo Sans SemiBold", sans-serif;
     line-height: 1.5;
     color: var(--color-texto);
 }
@@ -41,6 +42,7 @@ body{
 }
 .enlace-menu-principal a{
     font-weight: bold;
+    letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-texto);
@@ -49,7 +51,6 @@ body{
     color: var(--color-primario);
 }
 .enlace-menu-secundario a{
-    font-weight: bold;
     text-decoration: none;
     text-align: center;
     color: var(--color-texto);
@@ -64,6 +65,7 @@ body{
 }
 .boton-inicia, .boton-unete{
     border: 1px solid black;
+    font-weight: bold;
     font-size: 14px;
     border-radius: 40px;
     padding: 5px 20px 5px 20px;
