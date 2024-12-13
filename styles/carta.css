@@ -1,0 +1,208 @@
+:root {
+    --color-primario: #008248;
+    --color-secundario: #D4E9E2;
+    --color-background: #F7F7F7;
+    --color-background-secundario: #FFFFFF;
+    --color-texto: #1f1f1f;
+    --color-texto-secundario: #777777;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-background);
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    color: var(--color-texto);
+}
+
+.contenedor-izquierda{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.contenedor-carta{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.contenedor-imagen-carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.imagen-carta {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    object-fit:cover;
+}
+.degradado {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(145,145,145,0) 75%);
+    z-index: 2;
+}
+.contenedor-botones {
+    width: auto;
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    z-index: 10; 
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+.boton-nutricional{
+    border: 1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0); 
+    margin: 10px; 
+    transition: transform 0.2s;
+}
+.boton-nutricional:active{
+    transform: scale(0.9);
+}
+
+.contenedor-texto{
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.contenedor-comidas{
+    padding: 20px;
+}
+.comida{
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px 1px hsla(0, 0%, 42.4%, .11), 0 1px 1px 0 #ccc;
+}
+.comida img{
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.informacion-comidas {
+    align-content: center;
+    padding: 0 24px 24px 24px;
+}
+.informacion-comidas h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+.informacion-comidas p{
+    font-size: 14px;
+    color: var(--color-texto-secundario);
+    margin-bottom: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contenedor-comidas{
+        padding: 20px;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .comida{
+        width: calc(50% - 5px);
+        height: auto;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px 1px hsla(0, 0%, 42.4%, .11), 0 1px 1px 0 #ccc;
+    }
+}
+
+@media screen and (min-width: 1024px){    
+    .contenedor-izquierda{
+        width: 100%;
+        height: 100vh;
+        max-width: 513px;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .contenedor-carta{
+        width: 100%;
+        height: 100%;
+        max-width: 513px;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .contenedor-imagen-carta {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .imagen-carta {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+    }
+    .degradado {
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(145,145,145,0) 75%);
+        z-index: 2;
+    }
+    .contenedor-botones {
+        width: auto;
+        position: fixed;
+        bottom: 20px; 
+        left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        z-index: 10; 
+    }
+    .boton-nutricional {
+        margin: 10px; 
+    }
+    
+    .contenedor-derecha {
+        max-width: 830px;
+        width: 100%;
+        margin: auto;
+    }
+    .contenedor-texto{
+        padding: 20px 64.5px;
+    }
+    .contenedor-comidas{
+        margin: auto;
+        padding: 64.5px;
+    }
+}

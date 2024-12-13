@@ -14,7 +14,7 @@
 }
 body{
     background-color: var(--color-background);
-    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-family: Helvetica, sans-serif;
     line-height: 1.5;
     color: var(--color-texto);
 }
