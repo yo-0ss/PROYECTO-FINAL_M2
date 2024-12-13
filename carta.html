@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carta.css">
     <link rel="icon" href="images/starbucks-logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -15,9 +16,9 @@
     <header>
         <nav class="navbar">
             <div class="nav-izquierda">
-                <div class="logo"><img src="images/starbucks-logo.png" alt="Logo de Starbucks" srcset="images/starbucks-logo.svg" width="51px"></div>
+                <div class="logo"><a href="index.html"><img src="images/starbucks-logo.png" alt="Logo de Starbucks" srcset="images/starbucks-logo.svg" width="51px"></a></div>
                 <ul class="menu enlace-menu-principal">
-                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="#">Carta</a></li>
                     <li><a href="#">Café</a></li>
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">More</a></li>
@@ -43,62 +44,40 @@
     </header>
     <div class="contenedor-principal">
         <aside class="contenedor-izquierda">
-            <div class="contenedor-publicidad">
+            <div class="contenedor-carta">
                 <div class="contenedor-imagen-publicidad">
-                    <img src="images/Publicidad.png" alt="Publicidad" class="imagen-publicidad">
+                    <img src="images/carta.png" alt="Imagen de comida en Starbucks" class="imagen-carta">
                 </div>
                 <div class="degradado"></div>
                 <div class="contenedor-botones">
-                    <button class="boton-publicidad">Descargar la APP</button>
-                    <button class="boton-publicidad">Descubre Starbucks Rewards</button>
+                    <p>CARTA</p>
+                    <button class="boton-nutricional">Información Nutricional</button>
                 </div>
             </div>
         </aside>
         <div class="contenedor-derecha">
             <main>
-                <div class="contenedor-imagen-pincipal">
-                    <img class="imagen-principal" src="images/FRAME-1.png" alt="Imagen de bienvenida.">
-                </div>
-                <section class="articulo-navidad">
-                    <h1>Donde empieza la Navidad</h1>
-                    <p>Llegaron los sabores de siempre: <strong>Toffee Nut Latte</strong>, <strong>Gingerbread Latte</strong>, <strong>Fudge Brownie Chocolate</strong>. Sabores que marcan una época especial, una temporada que viene cargada de recuerdos y memorias. A veces puede sentirse abrumadora, pero aquí en Starbucks, somos refugio. Porque aunque todo parezca ir deprisa, aquí estamos para recordarte algo importante: aquí es <strong>donde empieza la Navidad.</strong></p>
-                    <button class="boton boton-navidad">Empieza la Navidad</button>
-                    <button class="boton">Bebidas</button>
+                <section class="contenedor-texto">
+                    <h2>Bebidas deliciosas y artesanales. Alimentos de gran sabor, elaborados con ingredientes sencillos pero de gran calidad. El café está en nuestro corazón, y también lo están todas las formas en las que te llevamos la experiencia Starbucks®, estés donde estés.</h2>
+                    <h3>Tanto si se trata de tu taza de café favorita para empezar el día como de un bocado rápido para animarte, tenemos algo preparado para ti. ¡Descúbrelo!</h3>
                 </section>
-                <section class="articulo-principal">
-                     <img class="imagen-articulo-principal" src="images/FRAME-2.jpg" alt="Imagen de representativa de cafés." >
-                    <div class="informacion-articulo-principal">
-                        <h2>¡Te lo llevamos!</h2>
-                        <h1>Disfruta tu experiencia Starbucks® donde quieras</h1>
-                        <p>¿Eres más de café, de smoothie, de latte o de Frappuccino®? No esperes más y pide Starbucks® a domicilio o para llevar.</p>
-                        <button class="boton">Más información</button>
+                <section class="contenedor-comidas">
+                    <div class="comida">
+                        <img src="images/bebidas.png" alt="Imagen de bebidas.">
+                        <div class="informacion-comidas">
+                            <h3>Bebidas</h3>
+                            <p>Podrás disfrutar de tu bebida favorita cómo y dónde quieras, con un sinfín de combinaciones donde elegir; frías, calientes, con leches o bebidas vegetales, con diferentes sabores.</p>
+                            <button class="boton">Descubre más</button>
+                        </div>
                     </div>
-                </section>
-                <section class="contenedor-articulos">
-                    <article class="articulo">
-                        <img src="images/articulo-1.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Carta</h3>
-                            <p>Bebidas deliciosas y alimentos de gran sabor elaborados con ingredientes sencillos pero de gran calidad.</p>
-                            <button class="boton">Más información</button>
+                    <div class="comida">
+                        <img src="images/comida.png" alt="Imagen de comida.">
+                        <div class="informacion-comidas">
+                            <h3>Dulces y Salados</h3>
+                            <p>Descubre cual es el "perfect pairing" de tu bebida favorita. No te pierdas la variedad de productos que siempre preparamos para ti, con la mejor gama de sabores y de la mejor calidad.</p>
+                            <button class="boton">Descubre más</button>
                         </div>
-                    </article>
-                    <article class="articulo">
-                        <img src="images/articulo-2.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Tiendas Starbucks®</h3>
-                            <p>Encuentra tu tienda Starbucks® más cercana, ¡te esperamos!</p>
-                            <button class="boton">Más información</button>
-                        </div>
-                    </article>
-                    <article class="articulo">
-                        <img src="images/articulo-3.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Cómo preparar café Starbucks®</h3>
-                            <p>Descubre los distintos métodos de elaboración para preparar tu café Starbucks® perfecto en casa.</p>
-                            <button class="boton">Más información</button>
-                        </div>
-                    </article>
+                    </div>
                 </section>
             </main>
             <footer>
