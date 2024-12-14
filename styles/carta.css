@@ -143,7 +143,7 @@ body{
 
 @media screen and (min-width: 1024px){    
     .contenedor-izquierda{
-        width: 100%;
+        width: 65%;
         height: 100vh;
         max-width: 513px;
         position: sticky;
