@@ -71,6 +71,9 @@ body{
     letter-spacing: 2px;
     font-weight: bold;
 }
+.contenedor-botones p{
+    padding-bottom: 30px;
+}
 .boton-nutricional{
     border: 1px solid #ffffff;
     font-size: 14px;
