@@ -410,7 +410,7 @@ footer{
     }
     
     .contenedor-izquierda{
-        width: 100%;
+        width: 65%;
         height: 100vh;
         max-width: 513px;
         position: sticky;
