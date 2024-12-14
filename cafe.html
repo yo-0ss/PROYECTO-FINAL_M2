@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cafe.css">
     <link rel="icon" href="images/starbucks-logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -20,7 +21,7 @@
                 </div>
                 <ul class="menu enlace-menu-principal">
                     <li><a href="carta.html">Carta</a></li>
-                    <li><a href="cafe.html">Café</a></li>
+                    <li><a href="#">Café</a></li>
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">More</a></li>
                     <li><span class="material-symbols-outlined">
@@ -45,62 +46,74 @@
     </header>
     <div class="contenedor-principal">
         <aside class="contenedor-izquierda">
-            <div class="contenedor-publicidad">
-                <div class="contenedor-imagen-publicidad">
-                    <img src="images/Publicidad.png" alt="Publicidad" class="imagen-publicidad">
+            <div class="contenedor-cafe">
+                <div class="contenedor-imagen-cafe">
+                    <img src="images/cafe.png" alt="Imagen de café" class="imagen-cafe">
                 </div>
                 <div class="degradado"></div>
                 <div class="contenedor-botones">
-                    <button class="boton-publicidad">Descargar la APP</button>
-                    <button class="boton-publicidad">Descubre Starbucks Rewards</button>
+                    <p>Nuestros cafés</p>
+                    <div class="botones">
+                        <button class="boton-cafe">Cómo preparar café Starbucks®</button>
+                        <button class="boton-cafe">Autumn Blend™</button>
+                    </div>
                 </div>
             </div>
         </aside>
         <div class="contenedor-derecha">
             <main>
                 <div class="contenedor-imagen-pincipal">
-                    <img class="imagen-principal" src="images/FRAME-1.png" alt="Imagen de bienvenida.">
+                    <img class="imagen-principal" src="images/café-principal.png" alt="Imagen de bienvenida.">
                 </div>
-                <section class="articulo-navidad">
-                    <h1>Donde empieza la Navidad</h1>
-                    <p>Llegaron los sabores de siempre: <strong>Toffee Nut Latte</strong>, <strong>Gingerbread Latte</strong>, <strong>Fudge Brownie Chocolate</strong>. Sabores que marcan una época especial, una temporada que viene cargada de recuerdos y memorias. A veces puede sentirse abrumadora, pero aquí en Starbucks, somos refugio. Porque aunque todo parezca ir deprisa, aquí estamos para recordarte algo importante: aquí es <strong>donde empieza la Navidad.</strong></p>
-                    <button class="boton boton-navidad">Empieza la Navidad</button>
-                    <button class="boton">Bebidas</button>
-                </section>
-                <section class="articulo-principal">
-                     <img class="imagen-articulo-principal" src="images/FRAME-2.jpg" alt="Imagen de representativa de cafés." >
-                    <div class="informacion-articulo-principal">
-                        <h2>¡Te lo llevamos!</h2>
-                        <h1>Disfruta tu experiencia Starbucks® donde quieras</h1>
-                        <p>¿Eres más de café, de smoothie, de latte o de Frappuccino®? No esperes más y pide Starbucks® a domicilio o para llevar.</p>
-                        <button>Más información</button>
+                <div class="contenedor-texto">
+                    <h2>Nuestros cafés</h2>
+                    <p>
+                        En Starbucks® , siempre se ha tratado y siempre se tratará de calidad. Nuestra pasión por el café solo se compara con nuestro amor por compartirlo. <br> <br>
+                        Ya sea que esté bebiendo solo o recibiendo invitados, disfrutar del café en casa debe ser una experiencia relajante, calmante y conmovedora.<br><br>
+                        Con tantas opciones, es difícil encontrar la taza perfecta.
+                    </p>
+                </div>
+                <section class="contenedor-productos-cafes">
+                    <div class="cafe">
+                        <img class="imagen-producto-cafe" src="images/XMAS BLEND.png" alt="Imagen de representativa de cafés." >
+                        <div class="informacion-producto-cafe informacion-derecha">
+                            <h2>STARBUCKS® Christmas Blend™</h2>
+                            <p>Nuestra receta combina el café añejado de Sumatra con granos de tueste oscuro de Guatemala, Colombia y la región cafetalera de Asia/Pacífico.</p>
+                            <button class="boton">Descúbrelo</button>
+                        </div>
+                    </div>
+                    <div class="cafe cafe-izquierda">
+                        <div class="informacion-producto-cafe informacion-izquierda">
+                            <h2>STARBUCKS® Christmas Espresso Roast™</h2>
+                            <p>Café con un tostado oscuro, decadente y deliciosamente elaborado con el corazón del espresso. Nuestro Christmas Blend Espresso Roast combina café de Sumatra, añejado a la perfección, con granos secados al sol de África Oriental y café de Costa Rica.</p>
+                            <button class="boton">Descúbrelo</button>
+                        </div>
+                        <img class="imagen-producto-cafe" src="images/XMAS BLEND ESPRESSO ROAST.png" alt="Imagen de representativa de cafés." >
+                    </div>
+                    <div class="cafe">
+                        <img class="imagen-producto-cafe" src="images/XMAS BLONDE.png" alt="Imagen de representativa de cafés." >
+                        <div class="informacion-producto-cafe informacion-derecha">
+                            <h2>STARBUCKS™ Christmas Blonde Roast</h2>
+                            <p>El Christmas Blonde Roast es deliciosamente accesible y perfecto para celebrar juntos. Comenzamos con granos de Indonesia que aportan una dulzura herbal, similar al arce, y añadimos cafés lavados y secados al sol de África Oriental para un toque de cítricos especiados e higo.</p>
+                            <button class="boton">Descúbrelo</button>
+                        </div>
                     </div>
                 </section>
-                <section class="contenedor-articulos">
-                    <article class="articulo">
-                        <img src="images/articulo-1.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Carta</h3>
-                            <p>Bebidas deliciosas y alimentos de gran sabor elaborados con ingredientes sencillos pero de gran calidad.</p>
-                            <button class="boton" class="boton" onclick="window.location.href='carta.html';">Más información</button>
-                        </div>
-                    </article>
-                    <article class="articulo">
-                        <img src="images/articulo-2.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Tiendas Starbucks®</h3>
-                            <p>Encuentra tu tienda Starbucks® más cercana, ¡te esperamos!</p>
-                            <button class="boton">Más información</button>
-                        </div>
-                    </article>
-                    <article class="articulo">
-                        <img src="images/articulo-3.png" alt="Imagen de comida.">
-                        <div class="informacion-articulos">
-                            <h3>Cómo preparar café Starbucks®</h3>
-                            <p>Descubre los distintos métodos de elaboración para preparar tu café Starbucks® perfecto en casa.</p>
-                            <button class="boton">Más información</button>
-                        </div>
-                    </article>
+                <section class="contenedor-espectro">
+                    <h2>EL ESPECTRO DE STARBUCKS ROAST™</h2>
+                    <h3>Nuestros cafés se clasifican en tres perfiles de tueste, para que pueda encontrar fácilmente el sabor y la intensidad adecuados para usted.</h3>
+                    <p>Con un cuerpo más ligero y suave, los cafés Starbucks® Blonde Roast despiertan suavemente los sentidos y ofrecen una taza accesible y sabrosa con ligeras notas tostadas.</p>
+                    <a href="#" class="clase-cafe">Café Tostado Suave</a>
+                    <p>Suaves y equilibrados, nuestros cafés de tueste medio son perfectos para cada pausa para el café.</p>
+                    <a href="#" class="clase-cafe">Café Tostado Medio</a>
+                    <p>Con cuerpo y rico, estos cafés presentan sabores robustos y la esencia característica de un tueste profundo.</p>
+                    <a href="#" class="clase-cafe">Café Tostado Intenso</a>
+                    <p>Con su cuerpo denso y aroma enérgico, estos cafés se caracterizan por un tostado más marcado que potencia los sabores específicos de los granos arábiga.</p>
+                    <div class="contenedor-botones-cafes">
+                        <button class="boton">Tostado Suave</button>
+                        <button class="boton">Tostado Medio</button>
+                        <button class="boton">Tostado Intenso</button>
+                    </div>
                 </section>
             </main>
             <footer>
