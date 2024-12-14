@@ -1,0 +1,314 @@
+:root {
+    --color-primario: #008248;
+    --color-secundario: #D4E9E2;
+    --color-background: #F7F7F7;
+    --color-background-secundario: #FFFFFF;
+    --color-texto: #1f1f1f;
+    --color-texto-secundario: #777777;
+    --color-blanco: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-background);
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    color: var(--color-texto);
+}
+
+.contenedor-izquierda{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.contenedor-cafe{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.contenedor-cafe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.imagen-cafe {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    object-fit:cover;
+}
+.degradado {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(145,145,145,0) 75%);
+    z-index: 2;
+}
+.contenedor-botones{
+    color: var(--color-blanco);
+    width: auto;
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    z-index: 10; 
+}
+.contenedor-botones p{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.boton-cafe{
+    border: 1px solid var(--color-blanco);
+    font-size: 14px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0); 
+    margin: 10px; 
+    max-width: fit-content;
+}
+
+.contenedor-imagen-principal{
+    width: auto;
+    height: auto;
+}
+.imagen-principal{
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contenedor-texto{
+    padding: 64.5px 20px;
+}
+.contenedor-texto h2{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.contenedor-texto p{
+    font-size: 16px;
+    color: var(--color-texto-secundario);
+}
+
+.contenedor-productos-cafes{
+    padding: 20px;
+}
+.cafe{
+    padding-bottom: 100px;
+}
+.imagen-producto-cafe{
+    width: 100%;
+}
+.informacion-producto-cafe{
+    max-height: 346px;
+}
+.informacion-producto-cafe h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.informacion-producto-cafe p{
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: var(--color-texto-secundario);
+}
+.cafe-izquierda{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contenedor-espectro{
+    padding: 20px;
+}
+.contenedor-espectro h2{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.contenedor-espectro h3{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.contenedor-espectro p{
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: var(--color-texto-secundario);
+}
+.contenedor-espectro a{
+    font-weight: 18px;
+    color: var(--color-texto);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+}
+.contenedor-espectro a:hover{
+    text-decoration: none;
+}
+
+.boton{
+    background-color: rgba(0, 0, 0, 0);;
+    border: 1px solid var(--color-primario);
+    padding: 7px 13px;
+    font-size: 14px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+.boton:hover{
+    background: var(--color-secundario);
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-productos-cafes{
+        padding: 20px;
+    }
+    .cafe{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .cafe-izquierda{
+        flex-direction: row;
+    }
+    .imagen-producto-cafe{
+        max-width: 49%;
+        height: auto;
+        object-fit:fill;
+    }
+    .informacion-derecha{
+        padding-left: 40px;
+    }
+    .informacion-izquierda{
+        padding-right: 40px;
+    }
+    .imagen-principal{
+        padding-top: 0;
+    }
+    .contenedor-espectro{
+        padding: 20px;
+    }
+    .contenedor-texto{
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contenedor-izquierda{
+        width: 65%;
+        height: 100vh;
+        max-width: 513px;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .contenedor-cafe{
+        width: 100%;
+        height: 100%;
+        max-width: 513px;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .cafe{
+        padding-bottom: 70px;
+    }
+    .contenedor-imagen-cafe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .imagen-cafe {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+    }
+    .degradado {
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(145,145,145,0) 75%);
+        z-index: 2;
+    }
+    
+    .contenedor-botones {
+        position: fixed;
+        bottom: 20px; 
+        left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 10; 
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagen-principal{
+        padding: 32px 64.5px;
+        padding-top: 0;
+    }
+
+    .contenedor-derecha {
+        max-width: 830px;
+        width: 100%;
+        margin: auto;
+    }
+    .contenedor-productos-cafes{
+        padding: 32px 64.5px;
+    }
+    .cafe{
+        display: flex;
+        align-items: flex-start;
+    }
+    .imagen-producto-cafe{
+        width: 346px;
+    }
+    .informacion-producto-cafe{
+        max-height: 346px;
+    }
+    .informacion-derecha{
+        padding-left: 50px;
+    }
+    .informacion-izquierda{
+        padding-right: 50px;
+    }
+    .contenedor-espectro{
+        margin: auto;
+        padding: 64.5px;
+    }
+    .contenedor-texto{
+        padding: 64.5px;
+    }
+}
